@@ -421,6 +421,8 @@ section {
   overflow: hidden;
 }
 
+
+
 .section-bg {
   background-color: #f8fbfe;
 }
@@ -430,6 +432,17 @@ section {
   padding-bottom: 30px;
   z-index: 2;
   position: relative;
+}
+
+@media (max-width: 768px) {
+
+  #hero {
+    padding-block: 20px;
+  }
+
+  section {
+     padding-block: 40px;
+  }
 }
 
 .section-title h2 {
@@ -1985,7 +1998,7 @@ section {
 
 @media (max-width: 768px) {
   .hero {
-    padding-block: 100px;
+    padding-block: 100px 20px;
   }
 
   .hero .box {
@@ -2203,55 +2216,12 @@ section {
   height: 30px;
 }
 
-.google-img {
-  width: 200px;
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
-  transform: rotate(-20deg);
-  opacity: 0.2;
-}
 
-.google-img--top {
-  left: auto;
-  bottom: auto;
-  top: 50px;
-  right: 50px;
-}
-
-.google-img--bottom {
-  transform: none;
-  bottom: 100px;
-  top: auto;
-  left: auto;
-  right: 100px;
-  opacity: 1;
-  border-radius: 10px;
-}
-
-.google-img--center {
-  top: auto;
-  left: 300px;
-  right: auto;
-  bottom: 0;
-  opacity: 1;
-  transform: none;
-  width: 400px;
-}
-
-@media (max-width: 1024px) {
-  .google-img {
-    width: 80px;
-  }
-
-  .hero .google-img--center { 
-    display: none;
-   }
-
-   .google-img--center {
-      width: 200px;
-      left: 50%;
-      bottom: -10px;
-      transform: translateX(-50%);
-   }
+.gradient .hero,
+.gradient .testimonials {
+  background-image: url('/static/assets/img/hero-bg2.jpg');
+  background-color: #ffffcc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
