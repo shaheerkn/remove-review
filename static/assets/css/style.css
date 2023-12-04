@@ -2202,3 +2202,56 @@ section {
   width: 30px;
   height: 30px;
 }
+
+.google-img {
+  width: 200px;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  transform: rotate(-20deg);
+  opacity: 0.2;
+}
+
+.google-img--top {
+  left: auto;
+  bottom: auto;
+  top: 50px;
+  right: 50px;
+}
+
+.google-img--bottom {
+  transform: none;
+  bottom: 100px;
+  top: auto;
+  left: auto;
+  right: 100px;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.google-img--center {
+  top: auto;
+  left: 300px;
+  right: auto;
+  bottom: 0;
+  opacity: 1;
+  transform: none;
+  width: 400px;
+}
+
+@media (max-width: 1024px) {
+  .google-img {
+    width: 80px;
+  }
+
+  .hero .google-img--center { 
+    display: none;
+   }
+
+   .google-img--center {
+      width: 200px;
+      left: 50%;
+      bottom: -10px;
+      transform: translateX(-50%);
+   }
+}
