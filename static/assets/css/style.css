@@ -421,8 +421,6 @@ section {
   overflow: hidden;
 }
 
-
-
 .section-bg {
   background-color: #f8fbfe;
 }
@@ -435,13 +433,16 @@ section {
 }
 
 @media (max-width: 768px) {
-
-  #hero {
-    padding-block: 20px;
+  section {
+    padding-block: 40px;
   }
 
-  section {
-     padding-block: 40px;
+  .hero h5 {
+    font-size: 14px;
+  }
+
+  .hero .align-self-baseline {
+    padding-inline: 20px !important;
   }
 }
 
@@ -2002,7 +2003,7 @@ section {
   }
 
   .hero .box {
-    margin-top: 80px;
+    margin-top: 30px;
     border-radius: 0 !important;
   }
   .hero .row {
@@ -2216,12 +2217,3 @@ section {
   height: 30px;
 }
 
-
-.gradient .hero,
-.gradient .testimonials {
-  background-image: url('/static/assets/img/hero-bg2.jpg');
-  background-color: #ffffcc;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
